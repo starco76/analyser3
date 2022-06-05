@@ -39,7 +39,7 @@ def part1(data,rate,Percentage):
         if now>=rate:be_cond.update({dec_part:be_cond.get(dec_part,0)+1})
         i+=1
     res={}
-    for i in count:
+    for i in count: 
         if count[i]*Percentage<=be_cond.get(i,0):
             res.update({i:[count[i],be_cond.get(i,0)]})
     return res
