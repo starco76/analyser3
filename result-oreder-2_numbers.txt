@@ -1,0 +1,7 @@
+3.43,4.53,
+
+ Total Profit =3.4
+
+ max loss =-2.1
+
+ new max loss =-0.2
