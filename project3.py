@@ -70,4 +70,4 @@ while i < end:
 
 pm = f'{counter=} {next_arrived=}  {max_len=}    id={rsid}   next max len={next_seq_arrived}     next id={next_id}'
 with open(os.path.basename(__file__)+'.txt','w') as f:
-    f.write(pm)
+    f.write(pm) 
