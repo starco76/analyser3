@@ -1,1 +1,1 @@
-counter=7 next_arrived=4  max_len=3    id=4   next max len=3     next id=4
+counter=7 next_arrived=3  max_len=3    id=6   next max len=2     next id=6

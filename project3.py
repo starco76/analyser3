@@ -34,15 +34,16 @@ def sum_digits_string(number):
 
 while i < end:
     zoj_np = np.array(list(map(sum_digits_string,data[i:i+zoj])))
-    fard_np = np.array(list(map(sum_digits_string,data[i:i+zoj])))
+    fard_np = np.array(list(map(sum_digits_string,data[i+zoj:i+num])))
     zoj_check = len(np.where(zoj_np%2==0)[0])==zoj
     fard_check = len(np.where(fard_np%2!=0)[0])==fard
     try:
-        nxt = data[int(i+1+num)]
+        nxt = data[int(i+num)]
     except:nxt=-1
     if zoj_check and fard_check :
+        print(zoj_np,fard_np,nxt)
+
         if nxt>=mabna:
-            print(nxt)
             next_arrived+=1
             if temp>max_len:
                 max_len=temp
@@ -51,7 +52,7 @@ while i < end:
             temp=1
         else:
             temp2 = 1
-            for j in range(i+2+num,len(data)):
+            for j in range(i+1+num,len(data)):
                 if data[j]>=mabna:
                     if temp2>next_seq_arrived:
                         next_seq_arrived = temp2
@@ -69,5 +70,6 @@ while i < end:
     i+=1
 
 pm = f'{counter=} {next_arrived=}  {max_len=}    id={rsid}   next max len={next_seq_arrived}     next id={next_id}'
+print(pm)
 with open(os.path.basename(__file__)+'.txt','w') as f:
     f.write(pm) 
