@@ -1,1 +1,6 @@
-counter=7 next_arrived=3  max_len=3    id=6   next max len=2     next id=6
+tedade kol= 2
+tedad resydan be 2= 1
+beshtarin tekrar= 1
+id= 11
+beshtarin tebg olgo= 2
+id=11
